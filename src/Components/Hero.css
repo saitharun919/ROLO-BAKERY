@@ -1,0 +1,59 @@
+.images{
+    height: 12.5rem;
+    width: 12.5rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.looking{
+    font-weight: 500;
+    font-family: "Simonetta", serif;
+    font-style: italic;
+    margin: 2rem 0rem 0rem 1rem;
+}
+
+
+.hero h1{
+    margin-top: 1rem;
+}
+.cake-name{
+    text-decoration: none;
+    color: cadetblue;
+    margin-left: .5rem;
+}
+
+.cake-price{
+    text-decoration: none;
+    color: cadetblue;
+    margin-left: .5rem;
+}
+
+.cake-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    overflow-x: scroll;
+    gap: 1rem;
+    margin: 0rem 1rem 0 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .cake-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        overflow-x: scroll; /* Horizontal scrolling */
+        white-space: nowrap; /* Prevent images from wrapping */
+    }
+    .cake-list > div {
+        flex-shrink: 0; /* Prevent div from shrinking */
+    }
+
+    .images {
+        width: 100%; /* Ensure images take up full container width */
+        object-fit: cover; /* Ensure images maintain aspect ratio */
+        max-width: 100%; /* Prevent images from exceeding their container */
+    }
+    }

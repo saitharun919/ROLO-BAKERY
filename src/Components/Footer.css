@@ -1,0 +1,66 @@
+footer{
+    background-color: aqua;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    padding: 0.5rem 1rem;
+    
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.footer-logo{
+    border-radius: 50%;
+    width: 3.75rem;
+    height: 3.75rem;
+}
+
+/* .content{
+    font-size: .6rem;
+    width: 11rem;
+    margin-top:1rem;
+    margin-left: .5rem;
+} */
+
+
+
+.foot .links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 0.8rem;
+    color: black;
+}
+
+.social-links ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+}
+
+.social-links ul li a{
+    font-size: 2.5rem;
+}
+
+.social-links{
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-terms pre {
+   text-align: center;
+
+    font-weight: 500;
+}
+
+
+@media only screen and (max-width:1024px) {
+    .links li{
+        font-size: 1rem;
+    }
+}

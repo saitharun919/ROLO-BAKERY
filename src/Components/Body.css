@@ -1,0 +1,30 @@
+.font-heading{
+    font-weight: 600;
+    font-family: "Simonetta", serif;
+    font-style: italic;
+}
+.body{
+    margin: 3rem 3rem;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(5, 82, 82, 0.633);
+}
+
+.sub-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:#262626;
+    font-family: "Simonetta", serif;
+}

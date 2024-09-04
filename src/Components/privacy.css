@@ -1,0 +1,70 @@
+.privacy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10rem;
+}
+
+.privacy h2{
+    font-family: "Simonetta", serif;
+    font-style: italic;
+}
+
+.content-show p{
+    font-family: "Simonetta", serif;
+    font-style: italic;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.accordian{
+    width: 50rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10rem;
+}
+
+.item{
+    background-color: rgb(246, 244, 243);
+    margin-bottom: .5rem;
+    padding: .5rem 1rem 1rem .5rem;
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Simonetta", serif;
+    font-style: italic;
+}
+
+.title{
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.content{
+    color: black;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+
+.content .show{
+    height: auto;
+    max-height: 9999px;
+    transition: all 0.5s cubic-bezier(1,0,1,0);
+    font-family: "Simonetta", serif;
+    font-style: italic;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .accordian{
+        width: 100%;
+        margin-left: 0rem;
+    }
+}

@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  'Geometric';
+}
+
+
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aqua;
+    /* position: fixed; */
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+
+.head img{
+    border-radius: 50%;
+    width: 3.75rem;
+    height: 3.75rem;
+
+}
+
+
+.cart{
+    border: none;
+    background-color: transparent;
+    color: white;
+    
+}
+
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 0.8rem;
+}
+ul li{
+    list-style-type:none;
+
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    list-style-type: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+.nav-close-btn{
+    display: none;
+    border: none;
+    background-color: transparent;
+}
+.nav-btn{
+    display: none;
+    border: none;
+    background-color: transparent;
+}
+
+.active {
+    color: black; /* Yellow color when active */
+  }
+  
+  .inactive {
+    color: white; /* White color when inactive */
+  }
+  
+  .inactive:hover {
+    color: black; /* Optional: Yellow color on hover when inactive */
+  }
+
+@media only screen and (max-width:1024px){
+   .head .nav-btn{
+        visibility: visible;
+        
+    }
+    .cart{
+        display: none;
+    }
+
+    .nav-btn{
+        display: block;
+    }
+    
+    .head nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 300px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: aqua;
+        transition: 1s;
+        position: relative;
+        transform: translateY(-100vh);
+    }
+
+    header .responsive_nav{
+        transform: none;
+    }
+}
