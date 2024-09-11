@@ -5,13 +5,13 @@ import Hero from './Hero'
 import Aboutus from './Aboutus'
 import Body from './Body'
 
-const Home = () => {
+const Home = ({ addToCart }) => {
   return (
 
     <div>
       
      <Carousel />
-     <Hero />
+     <Hero addToCart= {addToCart}/>
      <Body />
      <Aboutus />
     </div>

@@ -29,3 +29,27 @@
     justify-content: center;
     gap: 2.5rem;
 }
+
+.btn-btn{
+    border: none;
+    background-color: aqua;
+    width: 20rem;
+    margin-bottom: 2rem;
+}
+
+.btn-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+@media only screen and (max-width: 1024px) {
+    .form{
+        width: 100%;
+    }
+    .form input{
+        width: 20rem;
+    }
+    .feedback-section2 p{
+        font-size: 0.7rem;
+    }
+}

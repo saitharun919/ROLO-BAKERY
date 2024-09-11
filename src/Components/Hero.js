@@ -15,7 +15,7 @@ import fruitcake from './Image/fruitcake.jpg';
 import chocofudge from './Image/chocofudge.jpg'
 import bubbletea from './Image/bubbletea.jpg';
 import vegancake from'./Image/vegancake.jpg';
-const Hero = () => {
+const Hero = ({ addToCart }) => {
     const data = [
         {
             id:1,
@@ -68,17 +68,17 @@ const Hero = () => {
         },
 
         {
-            id: 4,
+            id: 3,
             imgSrc: image4,
             item: 'collection'
         },
         {
-            id: 5,
+            id: 4,
             imgSrc: image5,
             item: 'collection'
         },
         {
-            id: 6,
+            id: 5,
             imgSrc: image6,
             item: 'Choco-Lava'
         }
@@ -107,8 +107,10 @@ const Hero = () => {
                             <div>
                                 <img className='images' src={image.imgSrc} />
                                 <a className='cake-name' href=''>{image.item}</a>
+                                <button style={{width:'3rem',background:'none',margin:'1rem 0rem 0rem 4rem',border:'1px solid black'}} onClick={()=>addToCart(image)}>add</button>
                                 <img className='images' src={image.imgSrc} />
                                 <a className='cake-name' href=''>{image.item}</a>
+                                <button style={{width:'3rem',background:'none',margin:'1rem 0rem 0rem 4rem',border:'1px solid black'}}>add</button>
                             </div>
                             
                     )

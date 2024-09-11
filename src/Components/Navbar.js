@@ -19,10 +19,10 @@ const Navbar = () => {
     
   return (
     <header className='head'>
-        <img src={logo}  />
-        <nav ref={navRef}>
-             <ul className='links'>
-        <li><NavLink
+<img src={logo}  />
+<nav ref={navRef}>
+ <ul className='links'>
+<li><NavLink
   to="/"
   end
   className={({ isActive }) => (isActive ? 'active' : 'inactive')}
@@ -30,7 +30,7 @@ const Navbar = () => {
   Home
 </NavLink></li>
 
-        <li><NavLink
+<li><NavLink
   to="./Aboutus"
   end
   className={({ isActive }) => (isActive ? 'active' : 'inactive')}
@@ -38,7 +38,7 @@ const Navbar = () => {
   AboutUs
 </NavLink></li>
 
-        <li><NavLink
+<li><NavLink
   to="./Contactus"
   end
   className={({ isActive }) => (isActive ? 'active' : 'inactive')}
@@ -53,14 +53,24 @@ const Navbar = () => {
 >
   Askus
 </NavLink></li>
+
+
         </ul>
        
         <button className="nav-btn nav-close-btn"onClick={showNavbar}>
             <FaTimes />
         </button> 
 </nav>
-        <a className='cart'><i class="fa-solid fa-basket-shopping"></i></a>
-       <button className='nav-btn' onClick={showNavbar}>
+<li><NavLink
+  to="./Cart"
+  end
+  className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+>
+<i class="fa-solid fa-basket-shopping"></i>
+</NavLink></li>
+    
+        {/* <a className='cart'><i class="fa-solid fa-basket-shopping"></i></a>         */}
+       <button  className='nav-btn' onClick={showNavbar}>
             <FaBars />
         </button> 
          

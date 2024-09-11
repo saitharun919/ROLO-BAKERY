@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel as ResponsiveCarousel } from 'react-responsive-carousel';
-import './curosel.css'; // Import the external CSS file
+import './curosel.css'; 
 import image1 from './Image/image1.jpg';
 import image2 from './Image/image2.jpg';
 import image3 from './Image/image3.jpg';
@@ -85,9 +85,7 @@ const Carousel = () => {
               alt={image.alt}
               className="carousel-image"
             />
-            {/* <div className="carousel-caption">
-              <p>{image.text}</p>
-            </div> */}
+            
           </div>
         ))}
       </ResponsiveCarousel>
